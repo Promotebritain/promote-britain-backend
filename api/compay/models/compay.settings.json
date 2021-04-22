@@ -43,6 +43,12 @@
     },
     "county": {
       "model": "counties"
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "companies",
+      "dominant": true
     }
   }
 }

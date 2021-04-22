@@ -28,6 +28,15 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "counties",
+      "dominant": true
+    },
+    "country": {
+      "model": "countries"
     }
   }
 }
