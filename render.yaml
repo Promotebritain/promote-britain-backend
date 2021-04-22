@@ -6,6 +6,7 @@ services:
     buildCommand: yarn install && yarn build
     startCommand: yarn start
     healthCheckPath: /_health
+    region: frankfurt
     envVars:
       - key: NODE_VERSION
         value: 12.18.4
@@ -29,3 +30,4 @@ services:
 databases:
   - name: promote-britain
     plan: starter
+    region: frankfurt
