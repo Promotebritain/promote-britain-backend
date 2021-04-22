@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: promote-britain
+    name: promote-britain-strapi
     env: node
     plan: starter
     buildCommand: yarn install && yarn build
@@ -20,7 +20,7 @@ services:
         sync: false
       - key: DATABASE_URL
         fromDatabase:
-          name: promote-britain
+          name: promote-britain-database
           property: connectionString
       - key: JWT_SECRET
         generateValue: true
@@ -28,6 +28,6 @@ services:
         generateValue: true
 
 databases:
-  - name: promote-britain
+  - name: promote-britain-database
     plan: starter
     region: frankfurt
