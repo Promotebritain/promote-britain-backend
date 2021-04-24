@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: promote-britain-strapi
+    name: promote-britain-strapi-production
     env: node
     plan: starter
     buildCommand: yarn install && yarn build
@@ -20,7 +20,34 @@ services:
         sync: false
       - key: DATABASE_URL
         fromDatabase:
-          name: promote-britain-database
+          name: promote-britain-database-production
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_JWT_SECRET
+        generateValue: true
+  - type: web
+    name: promote-britain-strapi-staging
+    env: node
+    plan: starter
+    buildCommand: yarn install && yarn build
+    startCommand: yarn start
+    healthCheckPath: /_health
+    region: frankfurt
+    envVars:
+      - key: NODE_VERSION
+        value: 12.18.4
+      - key: NODE_ENV
+        value: production
+      - key: CLOUDINARY_NAME
+        sync: false
+      - key: CLOUDINARY_KEY
+        sync: false
+      - key: CLOUDINARY_SECRET
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: promote-britain-database-staging
           property: connectionString
       - key: JWT_SECRET
         generateValue: true
@@ -28,6 +55,9 @@ services:
         generateValue: true
 
 databases:
-  - name: promote-britain-database
+  - name: promote-britain-database-production
+    plan: starter
+    region: frankfurt
+  - name: promote-britain-database-staging
     plan: starter
     region: frankfurt
