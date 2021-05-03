@@ -1,4 +1,3 @@
-previewsEnabled: true
 services:
   - type: web
     name: promote-britain-strapi-production
@@ -56,7 +55,7 @@ services:
       - key: ADMIN_JWT_SECRET
         generateValue: true
       - fromGroup: cloudinary
-      
+
 databases:
   - name: promote-britain-database-production
     plan: starter
