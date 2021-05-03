@@ -27,6 +27,8 @@ services:
         generateValue: true
       - key: ADMIN_JWT_SECRET
         generateValue: true
+        - fromGroup: CLOUDINARY
+        
   - type: web
     name: promote-britain-strapi-staging
     env: node
@@ -54,6 +56,7 @@ services:
         generateValue: true
       - key: ADMIN_JWT_SECRET
         generateValue: true
+      - fromGroup: CLOUDINARY
 
 databases:
   - name: promote-britain-database-production
