@@ -1,3 +1,4 @@
+previewsEnabled: true
 services:
   - type: web
     name: promote-britain-strapi-production
