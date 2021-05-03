@@ -27,7 +27,6 @@ services:
         generateValue: true
       - key: ADMIN_JWT_SECRET
         generateValue: true
-      - fromGroup: cloudinary
   - type: web
     name: promote-britain-strapi-staging
     env: node
