@@ -27,7 +27,8 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "users_permissions_users": {
       "plugin": "users-permissions",
@@ -37,6 +38,10 @@
     },
     "country": {
       "model": "countries"
+    },
+    "companies": {
+      "via": "counties",
+      "collection": "company"
     }
   }
 }

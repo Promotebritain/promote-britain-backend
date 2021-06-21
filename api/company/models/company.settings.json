@@ -14,10 +14,6 @@
     "name": {
       "type": "string"
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "name"
-    },
     "image": {
       "model": "file",
       "via": "related",
@@ -48,6 +44,11 @@
     "users_permissions_users": {
       "plugin": "users-permissions",
       "collection": "user",
+      "via": "companies",
+      "dominant": true
+    },
+    "counties": {
+      "collection": "counties",
       "via": "companies",
       "dominant": true
     }
