@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "compays",
+  "collectionName": "companies",
   "info": {
     "name": "companies",
     "description": ""
@@ -27,7 +27,8 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "visible": {
       "type": "boolean"

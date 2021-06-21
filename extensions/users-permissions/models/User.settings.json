@@ -61,7 +61,7 @@
     },
     "companies": {
       "via": "users_permissions_users",
-      "collection": "compay"
+      "collection": "company"
     },
     "counties": {
       "via": "users_permissions_users",

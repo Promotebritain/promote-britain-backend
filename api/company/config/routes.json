@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/compays",
-      "handler": "compay.find",
+      "path": "/companies",
+      "handler": "company.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/compays/count",
-      "handler": "compay.count",
+      "path": "/companies/count",
+      "handler": "company.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/compays/:id",
-      "handler": "compay.findOne",
+      "path": "/companies/:id",
+      "handler": "company.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/compays",
-      "handler": "compay.create",
+      "path": "/companies",
+      "handler": "company.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/compays/:id",
-      "handler": "compay.update",
+      "path": "/companies/:id",
+      "handler": "company.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/compays/:id",
-      "handler": "compay.delete",
+      "path": "/companies/:id",
+      "handler": "company.delete",
       "config": {
         "policies": []
       }
