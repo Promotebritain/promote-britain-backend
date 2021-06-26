@@ -38,6 +38,10 @@
     },
     "country": {
       "model": "countries"
+    },
+    "company": {
+      "via": "counties",
+      "model": "companies"
     }
   }
 }
