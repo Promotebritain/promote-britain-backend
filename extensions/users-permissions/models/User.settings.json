@@ -59,10 +59,6 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "companies": {
-      "via": "users_permissions_users",
-      "collection": "company"
-    },
     "counties": {
       "via": "users_permissions_users",
       "collection": "counties"
