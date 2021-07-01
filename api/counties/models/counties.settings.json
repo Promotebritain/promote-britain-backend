@@ -39,9 +39,10 @@
     "country": {
       "model": "countries"
     },
-    "company": {
+    "companies": {
+      "collection": "companies",
       "via": "counties",
-      "model": "companies"
+      "dominant": true
     }
   }
 }

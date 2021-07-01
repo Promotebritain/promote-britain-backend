@@ -27,14 +27,11 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "counties": {
       "collection": "counties"
-    },
-    "company": {
-      "via": "countries",
-      "model": "companies"
     }
   }
 }

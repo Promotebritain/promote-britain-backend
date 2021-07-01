@@ -37,17 +37,13 @@
     "description": {
       "type": "richtext"
     },
-    "counties": {
-      "collection": "counties",
-      "via": "company"
-    },
     "users_permissions_user": {
       "plugin": "users-permissions",
       "model": "user"
     },
-    "countries": {
-      "collection": "countries",
-      "via": "company"
+    "counties": {
+      "via": "companies",
+      "collection": "counties"
     }
   }
 }
